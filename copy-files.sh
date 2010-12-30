@@ -29,8 +29,6 @@ rm -r ../../../vendor/$VENDOR/$DEVICE
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull needed standard libs
-cp -a $SOURCE/system/lib/libaudio.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-cp -a $SOURCE/system/lib/libaudiopolicy.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/lib/libcgdrv.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 cp -a $SOURCE/system/lib/gles2_sanity.so ../../../vendor/$VENDOR/$DEVICE/proprietary
