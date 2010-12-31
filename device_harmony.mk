@@ -1,7 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+#$(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Get a proper init file
 PRODUCT_COPY_FILES += \
@@ -30,7 +30,6 @@ DEVICE_PACKAGE_OVERLAYS += device/nvidia/harmony/overlay
 PRODUCT_PACKAGES += \
     librs_jni \
     gralloc.default \
-    gps.harmony \
     gralloc.tegra \
     overlay.tegra \
     lights.tegra \
