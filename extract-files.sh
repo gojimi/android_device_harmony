@@ -21,6 +21,8 @@ rm -r ../../../vendor/$VENDOR/$DEVICE
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull needed standard libs
+adb pull /system/lib/libaudio.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libaudiopolicy.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcgdrv.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/gles2_sanity.so ../../../vendor/$VENDOR/$DEVICE/proprietary

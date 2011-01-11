@@ -38,8 +38,11 @@ BOARD_KERNEL_CMDLINE := mem=448M@0M nvmem=64M@448M vmalloc=192M video=tegrafb co
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
-BOARD_USES_GENERIC_AUDIO := true
-BOARD_PREBUILT_LIBAUDIO := false
+BOARD_USES_GENERIC_AUDIO := false
+BOARD_PREBUILT_LIBAUDIO := true
+
+# Use dirty hack to allow froyo libaudio
+BOARD_USE_KINETO_COMPATIBILITY := true
 
 BOARD_EGL_CFG := device/nvidia/harmony/egl.cfg
 
