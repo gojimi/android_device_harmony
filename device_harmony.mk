@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
     gralloc.tegra \
     overlay.tegra \
     lights.tegra \
-    sensors.tegra
+    sensors.tegra \
+    audiofix
 
 # Use MDPI artwork
 PRODUCT_LOCALES += mdpi
