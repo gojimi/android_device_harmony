@@ -259,7 +259,7 @@ public class StatusBarService extends Service implements CommandQueue.Callbacks 
     // ================================================================================
     // Constructing the view
     // ================================================================================
-    private void makeStatusBarView(Context context) {
+    private void makeStatusBarView(final Context context) {
         Resources res = context.getResources();
 
         mIconSize = res.getDimensionPixelSize(com.android.internal.R.dimen.status_bar_icon_size);
